@@ -37,14 +37,14 @@ export default class USBAdapter extends Adapter<[timeout?: number]> {
     }
     if (!this.device)
       throw new Error('Can not find printer');
-
-    usb.usb.on('detach', function (device) {
-      if (device == self.device) {
-        self.emit('detach', device);
-        self.emit('disconnect', device);
-        self.device = null;
-      }
-    });
+    //
+    // usb.usb.on('detach', function (device) {
+    //   if (device == self.device) {
+    //     self.emit('detach', device);
+    //     self.emit('disconnect', device);
+    //     self.device = null;
+    //   }
+    // });
 
     return this;
   }
