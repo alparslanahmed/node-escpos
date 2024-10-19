@@ -1,6 +1,6 @@
 {
   "name": "escpos-usb",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "usb adapter for escpos",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "escpos-adapter": "^3.0.1",
+    "escpos-adapter": "^3.0.2",
     "usb": "*"
   },
   "keywords": [],
