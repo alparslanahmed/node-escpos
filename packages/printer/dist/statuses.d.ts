@@ -15,7 +15,7 @@ interface StatusJSONElementMultiple {
     label: string;
     status: Status;
 }
-declare type StatusJSONElement = StatusJSONElementSingle | StatusJSONElementMultiple;
+type StatusJSONElement = StatusJSONElementSingle | StatusJSONElementMultiple;
 interface StatusJSON<T extends string> {
     className: T;
     byte: number;
@@ -52,9 +52,9 @@ export declare const statusClasses: {
     ErrorCauseStatus: typeof ErrorCauseStatus;
     RollPaperSensorStatus: typeof RollPaperSensorStatus;
 };
-export declare type Statuses = typeof statusClasses;
-export declare type StatusClassName = keyof Statuses;
-export declare type StatusClassConstructor<T extends DeviceStatus> = {
+export type Statuses = typeof statusClasses;
+export type StatusClassName = keyof Statuses;
+export type StatusClassConstructor<T extends DeviceStatus> = {
     new (byte: number): T;
     commands(): string[];
 };

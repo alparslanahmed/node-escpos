@@ -12,23 +12,23 @@ export interface PrinterOptions {
     encoding?: string | undefined;
     width?: number | undefined;
 }
-export declare type PrinterModel = null | 'qsprinter';
+export type PrinterModel = null | 'qsprinter';
 /**
  * 'dhdw', 'dwh' and 'dhw' are treated as 'dwdh'
  */
-export declare type RasterMode = AnyCase<'normal' | 'dw' | 'dh' | 'dwdh' | 'dhdw' | 'dwh' | 'dhw'>;
+export type RasterMode = AnyCase<'normal' | 'dw' | 'dh' | 'dwdh' | 'dhdw' | 'dwh' | 'dhw'>;
 export interface QrImageOptions extends qr.Options {
     mode: RasterMode;
 }
-export declare type BitmapDensity = AnyCase<'s8' | 'd8' | 's24' | 'd24'>;
-export declare type StyleString = AnyCase<'normal' | `${'b' | ''}${'i' | ''}${'u' | 'u2' | ''}`>;
-export declare type FeedControlSequence = AnyCase<'lf' | 'glf' | 'ff' | 'cr' | 'ht' | 'vt'>;
-export declare type Alignment = AnyCase<'lt' | 'ct' | 'rt'>;
-export declare type FontFamily = AnyCase<'a' | 'b' | 'c'>;
-export declare type HardwareCommand = AnyCase<'init' | 'select' | 'reset'>;
-export declare type BarcodeType = AnyCase<'UPC_A' | 'UPC-A' | 'UPC-E' | 'UPC_E' | 'EAN13' | 'EAN8' | 'CODE39' | 'ITF' | 'NW7' | 'CODE93' | 'CODE128'>;
-export declare type BarcodePosition = AnyCase<'off' | 'abv' | 'blw' | 'bth'>;
-export declare type BarcodeFont = AnyCase<'a' | 'b'>;
+export type BitmapDensity = AnyCase<'s8' | 'd8' | 's24' | 'd24'>;
+export type StyleString = AnyCase<'normal' | `${'b' | ''}${'i' | ''}${'u' | 'u2' | ''}`>;
+export type FeedControlSequence = AnyCase<'lf' | 'glf' | 'ff' | 'cr' | 'ht' | 'vt'>;
+export type Alignment = AnyCase<'lt' | 'ct' | 'rt'>;
+export type FontFamily = AnyCase<'a' | 'b' | 'c'>;
+export type HardwareCommand = AnyCase<'init' | 'select' | 'reset'>;
+export type BarcodeType = AnyCase<'UPC_A' | 'UPC-A' | 'UPC-E' | 'UPC_E' | 'EAN13' | 'EAN8' | 'CODE39' | 'ITF' | 'NW7' | 'CODE93' | 'CODE128'>;
+export type BarcodePosition = AnyCase<'off' | 'abv' | 'blw' | 'bth'>;
+export type BarcodeFont = AnyCase<'a' | 'b'>;
 export interface BarcodeOptions {
     width: number;
     height: number;
@@ -36,15 +36,15 @@ export interface BarcodeOptions {
     font?: BarcodeFont | undefined;
     includeParity?: boolean | undefined;
 }
-export declare type LegacyBarcodeArguments = [
+export type LegacyBarcodeArguments = [
     width: number,
     height: number,
     position?: BarcodePosition | undefined,
     font?: BarcodeFont | undefined
 ];
-export declare type QRLevel = AnyCase<'l' | 'm' | 'q' | 'h'>;
-export declare type TableAlignment = AnyCase<'left' | 'center' | 'right'>;
-export declare type CustomTableItem = {
+export type QRLevel = AnyCase<'l' | 'm' | 'q' | 'h'>;
+export type TableAlignment = AnyCase<'left' | 'center' | 'right'>;
+export type CustomTableItem = {
     text: string;
     align?: TableAlignment;
     style?: StyleString | undefined;

@@ -8,6 +8,6 @@ export declare function charLength(char: string): 1 | 2;
 export declare function textLength(str: string): number;
 export declare function textSubstring(str: string, start: number, end?: number): string;
 export declare function upperCase<T extends string>(string: T): Uppercase<T>;
-export declare type AnyCase<T extends string> = Uppercase<T> | Lowercase<T>;
+export type AnyCase<T extends string> = Uppercase<T> | Lowercase<T>;
 export declare function isKey<T extends {} | []>(key: string | number | symbol, of: T): key is keyof T;
 //# sourceMappingURL=utils.d.ts.map

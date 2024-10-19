@@ -1,5 +1,5 @@
 import { NdArray } from "ndarray";
-export declare type ImageMimeType = 'image/png' | 'image/jpg' | 'image/jpeg' | 'image/gif' | 'image/bmp';
+export type ImageMimeType = 'image/png' | 'image/jpg' | 'image/jpeg' | 'image/gif' | 'image/bmp';
 /**
  * [Image description]
  * @param {[type]} pixels [description]
